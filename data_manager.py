@@ -2,8 +2,6 @@ import requests
 
 sheety_endpoint = ""
 
-
-
 class DataManager:
 
     def __init__(self):
@@ -15,3 +13,15 @@ class DataManager:
         self.destination_data = results["prices"]
         return self.destination_data
 
+    def update_sheet(self):
+        for city in self.destination_data:
+            new_data = {
+                "price": {
+                    "iataCode": city["iataCode"]
+                }
+            }
+            response = requests.put(
+                url=f"{sheety_endpoint}/{city['id']}",
+                json=new_data
+            )
+            print(response.text)

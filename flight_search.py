@@ -1,5 +1,10 @@
+
+KIWI_API_ENDPOINT = ""
+KIWI_API_KEY = ""
+
+
 class FlightSearch:
 
-    def __init__(self):
-
-        pass
+    def get_codes(self, city):
+        code = "TEsting"
+        return code
