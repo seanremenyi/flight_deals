@@ -11,11 +11,11 @@ data = data_manager.get_destinations_data()
 
 flight_search = FlightSearch()
 for row in data:
-    if data[0]["iataCode"] == '':
-        row["iataCode"] = flight_search.get_codes(data[0]['city'])
+    row["iataCode"] = flight_search.get_codes(row['city'])
 
 data_manager.destination_data = data
 data_manager.update_sheet()
+
 
 
 
