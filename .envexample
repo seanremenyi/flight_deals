@@ -1,0 +1,6 @@
+TWILIO_SID = "AC2234ecb70549dc49d72c85edfbab0dde"
+TWILIO_AUTH_TOKEN = "eaca5ea0258f0c20c4ffa9fe534c7d07"
+TWILIO_VIRTUAL_NUMBER = '+19088458529'
+TWILIO_VERIFIED_NUMBER = '+61420652451'
+KIWI_API_KEY = "r2Lf8dR1ssfriyJGHez6ZqwWAbj0xDzV"
+sheety_endpoint = "https://api.sheety.co/74c072687912f4e26b7048dfe623daa5/flightDeals/prices"
