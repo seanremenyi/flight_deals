@@ -1,4 +1,8 @@
-"# flight_deals" 
+100 Days of code - Python3.9
+
+Day 39/40 - Flight deal hunter  
+
+
 
 https://sheety.co/
 https://partners.kiwi.com/
