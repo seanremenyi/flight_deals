@@ -11,6 +11,7 @@ notification_manager = NotificationManager
 ORIGIN_CITY_IATA = "MEL"
 
 for row in data:
+    row["iataCode"] = flight_search.get_codes(row['city'])
 data_manager.destination_data = data
 data_manager.update_sheet()
 
@@ -30,4 +31,5 @@ for destination in data:
                     f"{flight.destination_city}-{flight.destination_airport}, from {flight.out_date} "
                     f"to {flight.return_date}."
         )
+
 

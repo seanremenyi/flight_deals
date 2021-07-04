@@ -1,12 +1,12 @@
+import requests
 
-KIWI_API_ENDPOINT = ""
+KIWI_API_ENDPOINT = "https://tequila-api.kiwi.com"
 KIWI_API_KEY = ""
 
 
 class FlightSearch:
 
     def get_codes(self, city):
-<<<<<<< HEAD
         endpoint = f"{KIWI_API_ENDPOINT}/locations/query"
         headers = {"apikey": KIWI_API_KEY}
         query = {"term": city, "location_types": "city"}
@@ -53,4 +53,3 @@ class FlightSearch:
         )
         print(f"{flight_data.destination_city}: £{flight_data.price}")
         return flight_data
-
